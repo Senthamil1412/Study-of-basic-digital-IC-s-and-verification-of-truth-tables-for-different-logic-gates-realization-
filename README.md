@@ -1,21 +1,15 @@
 # Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
- ## AIM:
+### AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
 
-## Equipments Required:
-Hardware – PCs, Cyclone II , USB flasher
-Software – Quartus prime
-Theory
-Introduction
-Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
+### Equipments Required:
+Hardware – PCs, Cyclone II , USB flasher Software – Quartus prime
 
-AND gate
-OR gate
-NOT gate
-NAND gate
-NOR gate
-Ex-OR gate
-Ex-NOR gate
+### Theory:
+Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
+
+AND gate OR gate NOT gate NAND gate NOR gate Ex-OR gate Ex-NOR gate
+
 1) AND gate
 The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB
 
@@ -52,35 +46,37 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 Y= A⊕B
 
 Procedure
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
-If the output is 1, then the bulb glows.
-Check all the gates following the same procedure.
-## Program:
+Connect the supply (+5V) to the circuit Switch ON the main switch Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed. If the output is 1, then the bulb glows. Check all the gates following the same procedure.
+
+### Program:
+Developed by:SENTHAMIL SELVAN.G
+
+RegisterNumber: 212222230139
+
 ```
-Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-
-Developed by: SENTHAMIL SELVAN.G
-RegisterNumber: 22008339
-
-module exno1(a,b,y1,y2,y3,y4,y5,y6,y7);
+\*
+module DE1(a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor); 
 input a,b;
-output y1,y2,y3,y4,y5,y6,y7;
-and (y1,a,b);
-or (y2,a,b);
-not (y3,a);
-xor (y4,a,b);
-nand (y5,a,b);
-nor (y6,a,b)
-xnor (y7,a,b);
-endmodule 
+output yand,yor,ynot,yxor,ynand,ynor,yxnor;
+and(yand,a,b);
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
+*/
 ```
+### OUTPUT RTL DIAGRAM:
+![image](https://github.com/22003264/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119389139/61b550f0-1152-4e37-962e-288daf23621c)
 
-## Output:
-![output](11.jpg)
-![output](222.png)
-![output](333.png)
+### OUTPUT TRUTH TABLE:
+![image](https://github.com/22003264/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119389139/92db09b6-b8ce-4fd4-84ab-30c497d397c0)
 
-## Result:
+### OUTPUT VERIFIED: 
+![image](https://github.com/22003264/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/119389139/035b3d3e-eeef-49ad-91e2-3a022a5031cc)
+
+
+### Result:
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
